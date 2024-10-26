@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodega</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="indexx.png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <button>Productos</button>
+                </a>
+            </li>
+            <li>
+                <a href="Punto.html">
+                    <button>Punto de venta</button>
+                </a>
+            </li>
+            <li>
+                <a href="confi.html">
+                    <button>Configuracion</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Productos Disponibles</h1>
+    </header>
+    <main>
+        <button onclick="imprimirPagina()">Imprimir</button>
+        <table id="productos-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Código</th>
+                    <th>Cantidad</th>
+                    <th>Precio ($)</th>
+                    <th>Precio (BS)</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los productos se agregarán aquí mediante JavaScript -->
+            </tbody>
+        </table>
+    </main>
+    <script src="mostrar.js"></script>
+</body>
+</html>
