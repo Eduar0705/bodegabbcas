@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Venta</title>
+    <link rel="stylesheet" href="./csss/punto-venta.css">
+    <link rel="icon" type="img" href="./imagenes/punto.png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"><button>Almacen</button></a>
+            </li>
+            <li>
+                <a href="punto-venta.html"><button>Punto de Venta</button></a>
+            </li>
+            <li>
+                <a href="historial-ventas.html"><button>Historial</button></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Punto de Venta</h1>
+        
+        <form id="venta-form">
+            <input type="text" id="nombre-comprador" placeholder="Nombre del comprador" required>
+            <input type="text" id="codigo-producto" placeholder="Código del producto" required>
+            <button type="submit">Agregar Producto</button>
+        </form>
+
+        <div id="lista-venta">
+            <h2>Productos en la Venta</h2>
+            <table id="tabla-venta">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Precio (Bs)</th>
+                        <th>Subtotal</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div id="total-venta">
+            <h3>Total: <span id="total">0.00</span> Bs</h3>
+        </div>
+
+        <button id="finalizar-compra">Finalizar Compra</button>
+    </div>
+    
+    <script src="./javascript/punto-venta.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Ventas</title>
+    <link rel="stylesheet" href="./csss/historila-ventas.css">
+    <link rel="icon" type="img" href="./imagenes/historial.png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"><button>Almacen</button></a>
+            </li>
+            <li>
+                <a href="punto-venta.html"><button>Punto de Venta</button></a>
+            </li>
+            <li>
+                <a href="historial-ventas.html"><button>Historial</button></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Historial de Ventas</h1>
+        
+        <div id="lista-ventas">
+            <table id="tabla-ventas">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Cliente</th>
+                        <th>Productos</th>
+                        <th>Total (Bs)</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <button id="finalizar-semana">Finalizar Semana</button>
+    </div>
+    
+    <script src="./javascript/historial-venta.js"></script>
+</body>
+</html>
